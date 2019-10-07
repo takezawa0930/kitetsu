@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.4.23)  7 OCT 2019 20:31
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.4.23)  7 OCT 2019 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**sawaib1007.tex
-(./sawaib1007.tex
+**sawara1007ページ未定.tex
+(./sawara1007ページ未定.tex
 pLaTeX2e <2018-12-01u02> (based on LaTeX2e <2018-12-01>)
 (/usr/local/texlive/2018/texmf-dist/tex/uplatex/base/utarticle.cls
 Document Class: utarticle 2018/10/25 v1.8a-u00 Standard upLaTeX class
@@ -106,11 +106,6 @@ Package: pxrubrica 2018/08/16 v1.3c PX Japanese-style ruby
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \c@tracingmulticols=\count97
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-141.
-
 \mult@box=\box48
 \multicol@leftmargin=\dimen132
 \c@unbalance=\count98
@@ -156,7 +151,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box72
 \colbreak@box=\box73
 \mc@col@check@num=\count105
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/platex-tools/pxftnright.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/platex-tools/pxftnright.sty
 Package: pxftnright 2017/02/28 v1.1 footnote layout package for pLaTeX
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/ftnright.sty
@@ -346,61 +342,61 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 )
 \c@newfoot=\count124
 
-(./sawaib1007.aux)
-\openout1 = `sawaib1007.aux'.
+No file sawara1007ページ未定.aux.
+\openout1 = `sawara1007ページ未定.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
- 《縦組モード》
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+《縦組モード》
 \AtBeginShipoutBox=\box89
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 100.
+(Font)              scaled to size 16.35773pt on input line 98.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 100.
+(Font)              scaled to size 16.35773pt on input line 98.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 100.
+(Font)              scaled to size 16.62714pt on input line 99.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 100.
+(Font)              scaled to size 16.62714pt on input line 99.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 99.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 100.
+(Font)              scaled to size 19.95642pt on input line 99.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 99.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 100.
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+(Font)              scaled to size 11.54663pt on input line 99.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 99.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 99.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 114.
+(Font)              scaled to size 13.85594pt on input line 99.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 114.
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 114.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 114.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 114.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 114.
+(Font)              scaled to size 13.85594pt on input line 99.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -414,45 +410,28 @@ Make it at least 17.0pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[101
-
+[100
 
 ]
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 130.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 130.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 130.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 130.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 130.
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 136.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 136.
- [102]
-Overfull \vbox (2.48897pt too high) has occurred while \output is active []
 
+Package marginnote Warning: Consecutive even pages found.
+(marginnote)                Note, it is not recommended to use consecutive
+(marginnote)                even pages in a double-ended document.
+(marginnote)                The pages of your document should always
+(marginnote)                be a sequence: odd-even-odd-even-...
+(marginnote)                Maybe you've forgotten a \cleardoublepage before
+(marginnote)                changing the page numbering on page 100.
 
-[103] [104] [105]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 200.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 200.
- [106] (./sawaib1007.aux) ) 
+Package marginnote Info: Using workaround for absolute page number on input lin
+e 127.
+[101] [102] (./sawara1007ページ未定.aux) ) 
 Here is how much of TeX's memory you used:
- 5927 strings out of 493215
- 95409 string characters out of 6144072
- 196830 words of memory out of 5000000
- 9821 multiletter control sequences out of 15000+600000
- 15953 words of font info for 76 fonts, out of 8000000 for 9000
+ 5905 strings out of 493215
+ 95311 string characters out of 6144072
+ 192802 words of memory out of 5000000
+ 9805 multiletter control sequences out of 15000+600000
+ 13422 words of font info for 64 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,10n,43p,2083b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,43p,796b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sawaib1007.dvi (6 pages, 33644 bytes).
+Output written on sawara1007ページ未定.dvi (3 pages, 3740 bytes).
