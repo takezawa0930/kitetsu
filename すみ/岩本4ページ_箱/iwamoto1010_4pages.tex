@@ -1,0 +1,297 @@
+%\documentclass[10pt,a4j]{utjarticle}
+\documentclass[b5j,twoside,twocolumn]{utarticle}
+%\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside,twocolumn]{utbook}
+\setlength{\columnsep}{2zw}
+\usepackage{bxpapersize}
+\usepackage{pxrubrica}
+\rubysetup{<hj>}
+\usepackage{endnotes}
+\usepackage{multicol}
+\usepackage{plext}
+\renewcommand{\theendnote}{[後注\arabic{endnote}]}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\usepackage{pxftnright}
+\usepackage{fancyhdr}
+\setlength{\topmargin}{5mm} % ページ上部余白の設定（182mm x 257mmから計算）。
+\addtolength{\topmargin}{-1in} % 初期設定の1インチ分を引いておく。
+\setlength{\oddsidemargin}{21mm} % 同、奇数ページ左。
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{17mm} % 同、偶数ページ左。
+\addtolength{\evensidemargin}{-1in}
+\setlength{\footskip}{-5mm}
+%\setlength{\marginparwidth}{23mm}
+%\setlength{\marginparsep}{5mm}
+\setlength{\textwidth}{225mm} % 文書領域の幅（上下）。縦書と横書でパラメータ（width / height）の向きが変わる。
+%\setlength{\textheight}{150mm} % 文書領域の幅（左右）
+\makeatletter
+\def\@cite#1#2{\rensuji{[{#1\if@tempswa , #2\fi}]}}%%
+\def\@biblabel#1{\rensuji{[#1]}}%%%
+\makeatother
+\usepackage{enumerate}
+\usepackage{braket}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\newcommand{\relmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+\usepackage{ascmac}
+\usepackage{okumacro}
+\usepackage{marginnote}
+%\usepackage[top=15truemm,bottom=15truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{cleveref}
+\usepackage{plext}
+\usepackage{pxrubrica}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{cancel}
+\setcounter{tocdepth}{3}
+
+%\renewcommand{\labelenumi}{(\Alph{enumi})}
+\usepackage {scalefnt}
+\makeatletter
+\@definecounter{yakuchu}
+\@addtoreset{yakuchu}{document}% <--- depende on class file
+\def\yakuchu{%
+\@ifnextchar[\@xfootnote %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark\@footnotetext}}
+\def\yakuchutext{%
+\@ifnextchar [\@xfootnotenext %]
+{\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotetext}}
+\def\yakuchumark{%
+\@ifnextchar[\@xfootnotemark %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark}}
+\makeatother
+
+\usepackage{atbegshi,etoolbox}
+
+\newcounter{newfoot}
+\patchcmd{\footnotetext}{\thempfn}{\thenewfoot}{}{}
+
+\newcommand{\evenfootnote}[1]{%
+  \ifodd\value{page}%
+    \footnotemark%
+    \AtBeginShipoutNext{%
+      \stepcounter{newfoot}\footnotetext{#1}%
+    }%
+  \else%
+    \stepcounter{newfoot}\footnote{#1}%
+  \fi%
+}
+
+
+\pagestyle{fancy}
+
+\title{四角い卵}
+\author{岩本智孝}
+\date{\vspace{-5mm}}
+\setcounter{page}{101}
+
+\begin{document}
+\maketitle
+
+\setlength{\footskip}{-2mm}
+\lhead[]{【小説】}
+\chead[]{}
+\rhead[四角い卵]{}
+\lfoot[]{\thepage{}}
+\cfoot[]{}
+\rfoot[\thepage{}]{}
+
+\let\yakuchu=\endnote
+\renewcommand{\footnoterule}{\noindent\rule{100mm}{0.3mm}\vskip2mm}
+%\tableofcontents
+\thispagestyle{fancy}
+梅田の夜空はいつも黄色みがかっている。暗闇というのは、存外人を落ち着かせるものだ。人間は太古の昔より火の力で闇を追い払ってきたが、それでも闇はつねに人間の傍にいてジッとこちらを見つめていた。その眼差しはきっと優しいものだったのだろう。
+
+
+黄ばんだ空は人の心をざわつかせる。奥村はスカイビルの真下から、箱にぽっかりとあいた大きな孔を見上げていた。箱に正確に穿たれているはずの円の輪郭は、次第にぼやけ、歪に収縮し、黄色い汁を絞りだして、奥村の頭上に今にも降りかかりそうなほど\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt。
+
+
+奥村はふと腕に目をやった。一番見慣れている小さな円だ。時間はそう遅くはないが、かといってここに居続ける意味もない。\\
+「……帰るか」
+
+
+そうつぶやいた声は変にくぐもっていた。そして、その言葉とは裏腹に、再開発ですっかり短くなった大阪駅とスカイビルを結ぶ地下道を抜けても、奥村は帰る気がまったくしなかった。グランフロント横の水場まで来たところで、彼は水浴びをしたくなった。最も近い水場の際に腰掛け、足をそっと差し入れた。水はぬるかった。グランフロントが放つ光を照り返す、清潔感溢れる見た目に反して、水は足に絡みついてくるかすかな粘っこさがあった。そういうわけであまり気晴らしにはならなかった。
+
+
+奥村を見下ろす四つの箱は、スカイビルと違って優しい光を注いでくれた。しかしその優しさは、彼に居心地の良さを感じさせる類のものではなかった。それは、さまざまな事情を抱えた人びとが行きかう、大都市の玄関口特有の優しさだった。みなに一様に降り注ぐ神の恵み、白い光、そういう優しさだった。\\
+\tbaselineshift =2.5pt ------\tbaselineshift =4.0ptそんな優しさなんていらない。
+
+
+奥村は持っていたタオルで足を拭うと、時空の広場を仮の目的地に定め、再び歩き始めた。なぜか足取りは重くなっていた。
+「すみません\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt」
+
+
+声がする方を振り向くと、若い女性の視線にぶつかった。女は、いかにも物静かな雰囲気を漂わせていた。だが、その物静かさに不釣り合いなほど強いアクセントを加えているものがあった。女の瞳は、眼鏡越しであるにもかかわらず、とてつもない吸引力をもった、「黒」だった。\\
+「\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt梅田駅はどこですか」\\
+「阪急ですか、阪神ですか、それともメトロですか？」
+
+
+新宿ほどではないにせよ、梅田は慣れない人にとっては一種のラビリンスだ。\\
+「えーっと……、阪急です」　
+
+
+女は手帳を開きながらそう言った。\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt今時、手帳か。そう思うことによって生じた一瞬の沈黙から察したのか、「スマートフォンは持っていないんです。電子機器はどうも苦手で」と女は続けた。
+「なるほど\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt」
+
+
+それならば、口で説明するのはまどろっこしい。\\
+「\tbaselineshift =2.5pt ------\tbaselineshift =4.0ptよければ、案内しますよ」\\
+「助かります」
+
+
+人とまともに話したのは何か月ぶりだろうか。奥村はすらすらと言葉が出てきた自分に驚いた。\\
+「梅田で迷いたくなければ、地上を歩くことです。さらにいえば、陸橋を通るのが一番良いんです」\\
+「覚えておきます」
+
+
+女は手帳に書き留めているらしかった。
+
+
+ルクア横の大阪駅と阪急梅田駅の連絡橋にさしかかった。数か月ぶりにまともに人と話した喜びとは対照的に、奥村の足取りは相変わらず重たかった。もはや案内しているはずの奥村が、女よりも半歩後ろを歩いていた。それが証拠に女の豊かな黒髪が、斜め前方からの風に吹かれ、こちらになびいていた。
+
+
+連絡橋はここまで長くないはずだ。奥村は軽い動悸、まとわりつく汗の不快さ、こみ上げてくる消化物の形を感じた。\\
+「ちょっと待ってもらえませんか」
+
+
+奥村は絞りだすような声で、女を引きとめた。
+
+
+女はこちらを振り向くことなく、そして凍えるほど優しい声で言った。\\
+「もうすぐそこですよ」
+
+
+気づけば奥村は、阪急梅田駅の大階段の下でうずくまっていた。奥村はゆっくりと上体を起こした。目をこすり、何度か瞬きをすると、視界がだんだんと明るくなってきた。そこは奥村が知っている阪急梅田駅とそっくりだったが、何かが決定的に違っていた。壁や床は、打ち棄てられてしばらく経ったかのように黒ずんでいる。照明はところどころ消えており、残っているものは異様に強く光っていた。しかし何よりも奥村を当惑させたのは、強烈な腐卵臭だった。形を失ったものがこみ上げてきたので、奥村は鼻をタオルで押さえながらしばらくじっとしていることにした。
+
+
+再び気づいたとき、奥村の体調は歩ける程度には回復していた。腐卵臭は相変わらずだが、吐き気はだいぶ収まっていた。起き上がると紀伊國屋書店が目に入った。この奇妙な空間にも人の営みがあることに奥村はほっとしかけたが、近づいてみると、これもまた紀伊國屋のようで紀伊國屋ではなかった。東側入り口の左にはユイスマンスの『さかしま』がうずたかく積まれ、右にはそれと対をなすようにワイルドの『ドリアン・グレイの肖像』の山が築かれていた。店内には、世界中の奇書、幻想文学、デカダン文学、神秘思想書がところ狭しと並べられていた。奇怪な照明と臭気とが相まって、作家たちの苦悶に満ちた顔が浮かび上がってくるようだった。ポーの暗鬱な表情、ボードレールの落ちくぼんだ目がそこにあった。
+
+
+奥村が本を手に取って見ていると、店の奥から足音が聞こえてきた。足音が近づき、その音の主の姿を彼はぼんやりと認めた。「黒」と目が合った。あの女だった。\\
+「目を覚ましたようですね」
+
+
+あの女で間違いなかったが、冷酷な表情と妖艶なたたずまいは、先刻の女のものとは思えなかった。
+「……ええ」\\
+「思いのほか早く回復されたようでよかったです」
+
+
+到底、額面通り受け取ってよい言葉とは思えなかった。\\
+「それでここはどこなんです？」\\
+「あなたならわかるんじゃないですか？」\\
+「ふざけないでくださいよ」
+
+
+奥村は怒りを示そうとしたが、どうもこの場に適切な態度のように思えず、力なくそう言った。
+「そう、あなたはこの場に順応している」
+
+
+女はすべてを見透かしたように言う。\\
+「お好きな本はありましたか？」\\
+「︙︙」\\
+「これなどはどうでしょう\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt」
+
+
+そう言うと女はバルバラの『赤い橋の殺人』を取り上げた。\\
+「\tbaselineshift =2.5pt ------\tbaselineshift =4.0ptあなたは自らの悪徳を覆い隠し、耽溺すべき幻想を軽蔑している。存分に耽溺してよいのに。自らの悪徳から逃れることはできません、どんな美徳をもってしても贖えないクレマンの大罪のように、あるいはドリアン・グレイの見るもおぞましき肖像のように。彼らは決して追い払うことのできない悪徳をむしろ謳歌すべきだったのです」
+
+
+奥村は女の凄みを前にして押し黙ることしかできなかった。\\
+「悪徳を受け入れなさい。神の優しさなんていらないのでしょう？」\\
+「︙︙」\\
+「あなたには期待しているんです」
+
+
+女の瞳がにわかに熱を帯びた。\\
+「な、何を言っているんだ」
+
+
+奥村は思わず尻もちをつき、後ずさった。\\
+「あなたの想像力に、あなたのその〝目〟に\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt」
+
+
+女は酔いしれるように滔々と語り始めた。\\
+「\tbaselineshift =2.5pt ------\tbaselineshift =4.0ptここへは私が導きました。ですが、だれもが入れるわけではありません。世界に居場所がなく、自分を受け入れない世界と人間に不快感と憎しみを抱く者、しかし、陶酔と狂気でもって、俗悪なる世界を倒錯的に愛する者のみを受け入れるのです。幻想は汚らわしき地上にこそあるのです。清浄なる天上はわれわれのもとに降り、汚すべき対象、つまり愛すべき対象となります。そして、汚し愛し尽くした天上に、われわれの新たな王を君臨させるのです。あなたはここに至る資格を持っていますが、陶酔と狂気が不足しています。あなたはこの荒廃を、この腐卵臭を愛せますか？　この腐卵臭の源をたどることができますか？　あの黄金の殿堂を。あれが見えませんか？　卵黄がとくとくと流れ出ながらも絶妙な幾何学的均衡を保っているあの殿堂が！　栄光よりも汚辱を、美徳よりも背徳を、浄福よりも涜聖を、壮健よりも頽廃を愛することができますか？　あなたは黄金の殿堂を前にして、汚辱を、背徳を、涜聖を、頽廃を恐れ、うずくまる者です。さあ、立ち上がりなさい。ともに参りましょう、黄金の殿堂へ」
+
+
+腐卵臭はいよいよ強まった。目に染みるほどだった。奥村は膝で顔を覆った。\\
+「何を恐れることがあるのです。あの忌々しい自然主義者ゾラでさえ、彼が寄り添った民衆のあいだの狂気と非理性を鋭敏に嗅ぎ取ったというのに。『居酒屋』のクーポーの神秘的な痙攣を思い出しなさい。あれはニジンスキーのバレエを予示していたのです！　理性あるところに非理性あり。影のようにぴったりとくっついて！」
+
+
+二人のあいだに沈黙が降りた。
+
+
+しばらくして、沈黙を破るかのように女は突如がくっと膝をついた。女は声色を変え、諭すように言った。穏やかに、包み込むように、聖母のように！\\
+「あなたは、“そう”でしたか。期待外れではありますが、それもよいでしょう」
+
+
+すると、女は不似合いな大きさのブレザージャケットのポケットから黒光りするナイフを取り出した。鈍い光が奥村の目の前で見事な曲線を描いた。奥村は腰が抜け、恐怖のあまり声を上げることもかなわなかった。\\
+「怯えないでください。あなたを殺すわけではありません\tbaselineshift =2.5pt ------\tbaselineshift =4.0pt」
+
+
+女は心臓が凍るほど冷たく、そして、こうなることがさも当然だったかのようにそっけなく言った。\\
+「\tbaselineshift =2.5pt ------\tbaselineshift =4.0ptあなたの手で私を殺してください」
+
+
+奥村は憔悴しきっていた。思考力をほとんど失っていた。
+「あなたがとれる選択肢は二つに一つ。私についていくか、私を殺しこの空間から脱出するか」\\
+「うっ……」
+
+
+奥村は、いくら思考力を失っていても、この空間がいくら異常なものであっても、最後まで良心を失わずにいた。\\
+「ねぇ、早くしてよ」\\
+「……ダメだ」\\
+「何が！」
+
+
+女は激高した。奥村に無理やりナイフを握らせ、震える刃先で自分の喉元をなぞらせた。\\
+「ここ、掻き切ってよ。掻き切れば、あなたは“完成”する」
+
+
+女はぞっとするような笑みを浮かべていた。\\
+「あなたのその理性が死ぬほど憎たらしい！　だけど、狂おしいほど愛しい！　ただ、忘れないで。狂気、悪徳、非理性は永遠にあなたにつきまとう」
+
+
+女の笑みは、もはや恍惚としたそれだった。
+
+
+奥村の中にどす黒い何かがむくむくと沸き起こった。
+
+
+次の瞬間、奥村は女の喉を掻き切っていた。
+
+
+喉から卵黄が、心臓の鼓動に合わせてどくどくとリズミカルに飛び出し、あたり一面を真っ黄色に染め上げた。それは明らかに人間一人分の体積を優に超える量だった。そして、卵黄の中心部のオレンジ色、外縁の黄色、そして、床と壁の黒ずみが鮮やかなコントラストをなし、阪急梅田駅を黄金の殿堂に変えた。
+
+
+奥村が自分のとった行動に気づいたときには、あたりは普段と変わらない様子の阪急大阪梅田駅だった。通りゆく人々に奇異な目で見られていることに気がつき、奥村は慌てて立ち上がった。彼は何かを握りしめていた。それは、ナイフではなく、一枚の名刺だった。
+\vspace{-3mm}
+
+\begin{table}[h]
+\centering
+%\begin{tabular}<y>{c}
+\begin{tabular}{|l|}\hline
+\multicolumn{1}{|c|}{\pbox<z>{\textbf{小説コンサルタント}}} \\
+\multicolumn{1}{|c|}{\pbox<z>{\textbf{佐田恵美}}}      \\
+\small
+\textbf{\pbox<z>{東京都新宿区○○△―□―◇                 }}\\
+\footnotesize
+\textbf{\pbox<z>{ＴＥＬ：×××―××××―××××           } }\\\hline
+\end{tabular}
+\end{table}
+
+
+\vspace{-5mm}
+ふと腕に目をやると、時計は終電間際の時刻を示していた。奥村は小説の題材探しを切り上げ、帰宅することにした。
+「今度かけてみるか、電話」
+なぜだか良い小説が書けそうな気がした。
+
+\end{document}
