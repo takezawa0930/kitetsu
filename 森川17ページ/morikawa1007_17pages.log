@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.4.23)  10 OCT 2019 16:57
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.4.23)  11 OCT 2019 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -385,7 +385,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-No file morikawa1007_17pages.aux.
+(./morikawa1007_17pages.aux)
 \openout1 = `morikawa1007_17pages.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -404,7 +404,7 @@ LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
 LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
-《縦組モード》
+ 《縦組モード》
 \AtBeginShipoutBox=\box89
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 16.62714pt on input line 86.
@@ -429,48 +429,42 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 98.
+(Font)              scaled to size 13.85594pt on input line 100.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 98.
+(Font)              scaled to size 13.85594pt on input line 100.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 98.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 98.
+(Font)              scaled to size 13.85594pt on input line 100.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 98.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 98.
+(Font)              scaled to size 13.85594pt on input line 100.
 
-No file morikawa1007_17pages.toc.
+(./morikawa1007_17pages.toc
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 1.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 1.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 3.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.8111pt on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `morikawa1007_17pages.toc'.
 
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 110.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 110.
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 110.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 110.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 110.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 110.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 110.
+(Font)              scaled to size 4.8111pt on input line 113.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 110.
+(Font)              scaled to size 6.73553pt on input line 113.
 \openout3 = `morikawa1007_17pages.ent'.
 
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 115.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 115.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 115.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 115.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -497,38 +491,41 @@ Package marginnote Warning: Consecutive even pages found.
 (marginnote)                changing the page numbering on page 20.
 
 Package marginnote Info: Using workaround for absolute page number on input lin
-e 120.
+e 115.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 118.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 118.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 118.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 118.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 122.
+(Font)              scaled to size 7.69775pt on input line 125.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 122.
-
-Overfull \vbox (2.23892pt too high) has occurred while \output is active []
-
-
+(Font)              scaled to size 5.77332pt on input line 125.
 [21]
 File: 光.jpg Graphic file (type bmp)
 <光.jpg>
 
+Overfull \vbox (3.74341pt too high) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] [23]
+[22] [23] [24]
 File: 箱と怪物.jpg Graphic file (type bmp)
 <箱と怪物.jpg>
 
-Overfull \hbox (18.11147pt too wide) in paragraph at lines 193--194
+Overfull \hbox (18.11147pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
 File: 秘密.jpg Graphic file (type bmp)
 <秘密.jpg>
 
-Overfull \hbox (26.63469pt too wide) in paragraph at lines 207--208
+Overfull \hbox (26.63469pt too wide) in paragraph at lines 210--211
  [][] 
  []
 
@@ -538,29 +535,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [25]
 File: 物凄いもの.jpg Graphic file (type bmp)
 <物凄いもの.jpg>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[26]
+ [26]
 File: 因果.jpg Graphic file (type bmp)
 <因果.jpg>
 
-Overfull \hbox (30.47418pt too wide) in paragraph at lines 244--245
+Overfull \hbox (30.47418pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
 
-Overfull \vbox (0.98901pt too high) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27] [28] [29] [30] [31]
+Overfull \vbox (3.9961pt too high) has occurred while \output is active []
 
 
-[27] [28] [29] [30] [31] [32]
-Overfull \vbox (3.99611pt too high) has occurred while \output is active []
+[32]
+Overfull \vbox (5.0937pt too high) has occurred while \output is active []
 
 
-[33] [34
-
-] (./morikawa1007_17pages.ent
+[33] [34] (./morikawa1007_17pages.ent
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
 (Font)              Font shape `JT2/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
@@ -573,21 +567,17 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ])
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 404.
+(Font)              scaled to size 8.65997pt on input line 407.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 404.
- [36] (./morikawa1007_17pages.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(Font)              scaled to size 8.65997pt on input line 407.
+ [36] (./morikawa1007_17pages.aux) ) 
 Here is how much of TeX's memory you used:
- 4673 strings out of 493215
- 64058 string characters out of 6144072
+ 4677 strings out of 493215
+ 64158 string characters out of 6144072
  161252 words of memory out of 5000000
  8527 multiletter control sequences out of 15000+600000
  16857 words of font info for 80 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  41i,11n,43p,3918b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on morikawa1007_17pages.dvi (17 pages, 100376 bytes).
+Output written on morikawa1007_17pages.dvi (17 pages, 102324 bytes).
