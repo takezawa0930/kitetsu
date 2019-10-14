@@ -1,0 +1,143 @@
+%\documentclass[10pt,a4j]{utjarticle}
+\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside,twocolumn]{utbook}
+\setlength{\columnsep}{2zw}
+\usepackage{bxpapersize}
+\usepackage{pxrubrica}
+\rubysetup{<hj>}
+\usepackage{color}
+\usepackage{endnotes}
+\usepackage{multicol}
+\usepackage{plext}
+\renewcommand{\theendnote}{[後注\arabic{endnote}]}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\usepackage{pxftnright}
+\usepackage{fancyhdr}
+\setlength{\topmargin}{5mm} % ページ上部余白の設定（182mm x 257mmから計算）。
+\addtolength{\topmargin}{-1in} % 初期設定の1インチ分を引いておく。
+%\setlength{\oddsidemargin}{14mm} % 同、奇数ページ左。
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-20mm} % 同、偶数ページ左。
+%\addtolength{\evensidemargin}{-1in}
+\setlength{\footskip}{-5mm}
+%\setlength{\marginparwidth}{23mm}
+%\setlength{\marginparsep}{5mm}
+%\setlength{\textwidth}{225mm} % 文書領域の幅（上下）。縦書と横書でパラメータ（width / height）の向きが変わる。
+\setlength{\textheight}{165mm} % 文書領域の幅（左右）
+
+
+\makeatletter
+\def\@cite#1#2{\rensuji{[{#1\if@tempswa , #2\fi}]}}%%
+\def\@biblabel#1{\rensuji{[#1]}}%%%
+\makeatother
+\usepackage{enumerate}
+\usepackage{braket}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\newcommand{\relmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+\usepackage{ascmac}
+\usepackage{okumacro}
+\usepackage{marginnote}
+%\usepackage[top=15truemm,bottom=15truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{cleveref}
+\usepackage{plext}
+\usepackage{pxrubrica}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{cancel}
+\setcounter{tocdepth}{3}
+
+%\renewcommand{\labelenumi}{(\Alph{enumi})}
+\usepackage {scalefnt}
+\makeatletter
+\@definecounter{yakuchu}
+\@addtoreset{yakuchu}{document}% <--- depende on class file
+\def\yakuchu{%
+\@ifnextchar[\@xfootnote %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark\@footnotetext}}
+\def\yakuchutext{%
+\@ifnextchar [\@xfootnotenext %]
+{\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotetext}}
+\def\yakuchumark{%
+\@ifnextchar[\@xfootnotemark %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark}}
+\makeatother
+
+\usepackage{atbegshi,etoolbox}
+
+\newcounter{newfoot}
+\patchcmd{\footnotetext}{\thempfn}{\thenewfoot}{}{}
+
+\newcommand{\evenfootnote}[1]{%
+  \ifodd\value{page}%
+    \footnotemark%
+    \AtBeginShipoutNext{%
+      \stepcounter{newfoot}\footnotetext{#1}%
+    }%
+  \else%
+    \stepcounter{newfoot}\footnote{#1}%
+  \fi%
+}
+
+\newcommand{\shokai}[4]{%
+\raggedright\large\textbf{#1}\\%
+\footnotesize\raggedleft #2\\%
+#3\\
+\small\raggedright #4\\%
+\vspace{2mm}
+}
+\newcommand{\shokaimnasi}[3]{%
+\raggedright\large\textbf{#1}\\%
+\footnotesize\raggedleft #2\\%
+\small\raggedright #3\\%
+\vspace{2mm}
+}
+
+\renewcommand{\baselinestretch}{0.9}
+\pagestyle{fancy}
+
+\setcounter{page}{154}
+
+\begin{document}
+
+\setlength{\footskip}{-2mm}
+\lhead[]{}
+\chead[]{}
+\rhead[希哲会について]{}
+\lfoot[]{}
+\cfoot[]{}
+\rfoot[]{}
+\thispagestyle{fancy}
+\begin{multicols}{4}
+\subsection*{執筆者紹介}
+\shokai{五十里翔吾}{基礎工学部システム科学科\rensuji{B4}}{anchor200km@gmail.com}{今号からは会長を引き継いで編集を担当しました。立体ミネルヴァくんもぜひ組み立ててみてください。}
+\shokai{野上貴裕}{文学部哲学・思想文化学専修\rensuji{B4}}{takahiro.nogami729@gmail.com}{なんとかかんとか出した希哲の１号、２号でしたが、編集を下の世代に託したこの３号以降もプラットフォームとして続いていってくれれば幸せですね。}
+\shokai{澤井優花}{文学部哲学・思想文化学専修\rensuji{B2}}{Y00viola@gmail.com}{私自身、しんのすけとよく似ていると思います。}
+\shokai{森川勇大}{大学院人間科学研究科\rensuji{M1}}{marumo3da@gmail.com}{さいきん果物にハマっています。}
+\shokaimnasi{黒臺瞭太}{阪大文学部\rensuji{OB}}{また呼んでいただいてありがたい限りです。最近アイデアが湧いてまた小説が書きたくなってきました。「希哲」の創刊号で書いて大爆死した(主観)くせに懲りないもんです}
+\color{white}
+。\\
+\color{black}
+\shokai{武澤里映}{文学部美学専修\rensuji{B3}}{tkzw0930@gmail.com}{生みの苦しみを味わいましたが、確かにクセになりますね。}
+\shokaimnasi{新井悠介}{経済学部\rensuji{B4}}{二度目まして、はじめてにもまして大変なことにね。}
+\shokai{佐原キオ}{a}{a}{a}
+\shokai{中野由梨花}{法学部法学科\rensuji{B4}}{1996lilyflower@gmail.com}{多分、白くて丸いものが好きです。特に楕円形。}
+\shokai{金重}{a}{a}{a}
+\shokai{岩本智孝}{大学院文学研究科\rensuji{M1}}{ponrock288okj75@gmail.com}{「大阪梅田」も「京都河原町」もなんだかんだ慣れていくでしょう。ただし「石橋阪大前」、テメーはダメだ。}
+\shokai{中谷拓也}{文学部\rensuji{B1}}{tooker1130@gmail.com}{ぼくの座右の銘(勝手に改変済)を聞いてください！「明日にりんごの樹を植える」}
+\shokaimnasi{田所穐來}{\rensuji{JK}アルバイター}{エモーショナルハードコア}
+\shokaimnasi{小山詩乃}{人間科学部\rensuji{B1}}{精進したいです。}
+
+\color{white}
+ ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ． ．
+\end{multicols}
+\end{document}

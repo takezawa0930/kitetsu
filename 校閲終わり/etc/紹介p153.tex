@@ -1,0 +1,184 @@
+%\documentclass[10pt,a4j]{utjarticle}
+\documentclass[b5j,twoside,twocolumn]{utarticle}
+%\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside,twocolumn]{utbook}
+\setlength{\columnsep}{2zw}
+\usepackage{bxpapersize}
+\usepackage{pxrubrica}
+\rubysetup{<hj>}
+\usepackage{endnotes}
+\usepackage{multicol}
+\usepackage{plext}
+\renewcommand{\theendnote}{[後注\arabic{endnote}]}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\usepackage{pxftnright}
+\usepackage{fancyhdr}
+\setlength{\topmargin}{5mm} % ページ上部余白の設定（182mm x 257mmから計算）。
+\addtolength{\topmargin}{-1in} % 初期設定の1インチ分を引いておく。
+\setlength{\oddsidemargin}{21mm} % 同、奇数ページ左。
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{17mm} % 同、偶数ページ左。
+\addtolength{\evensidemargin}{-1in}
+\setlength{\footskip}{-5mm}
+%\setlength{\marginparwidth}{23mm}
+%\setlength{\marginparsep}{5mm}
+\setlength{\textwidth}{225mm} % 文書領域の幅（上下）。縦書と横書でパラメータ（width / height）の向きが変わる。
+%\setlength{\textheight}{150mm} % 文書領域の幅（左右）
+\makeatletter
+\def\@cite#1#2{\rensuji{[{#1\if@tempswa , #2\fi}]}}%%
+\def\@biblabel#1{\rensuji{[#1]}}%%%
+\makeatother
+\usepackage{enumerate}
+\usepackage{braket}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\newcommand{\relmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+\usepackage{ascmac}
+\usepackage{okumacro}
+\usepackage{marginnote}
+%\usepackage[top=15truemm,bottom=15truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{cleveref}
+\usepackage{plext}
+\usepackage{pxrubrica}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{cancel}
+\setcounter{tocdepth}{3}
+
+%\renewcommand{\labelenumi}{(\Alph{enumi})}
+\usepackage {scalefnt}
+\makeatletter
+\@definecounter{yakuchu}
+\@addtoreset{yakuchu}{document}% <--- depende on class file
+\def\yakuchu{%
+\@ifnextchar[\@xfootnote %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark\@footnotetext}}
+\def\yakuchutext{%
+\@ifnextchar [\@xfootnotenext %]
+{\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotetext}}
+\def\yakuchumark{%
+\@ifnextchar[\@xfootnotemark %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark}}
+\makeatother
+
+\usepackage{atbegshi,etoolbox}
+
+\newcounter{newfoot}
+\patchcmd{\footnotetext}{\thempfn}{\thenewfoot}{}{}
+
+\newcommand{\evenfootnote}[1]{%
+  \ifodd\value{page}%
+    \footnotemark%
+    \AtBeginShipoutNext{%
+      \stepcounter{newfoot}\footnotetext{#1}%
+    }%
+  \else%
+    \stepcounter{newfoot}\footnote{#1}%
+  \fi%
+}
+
+\newcommand{\shokai}[4]{%
+\raggedright\large\textbf{#1}\\%
+\small\raggedleft #2\\%
+#3\\
+\normalsize\raggedright #4\\%
+\vspace{2mm}
+}
+\newcommand{\shokaimnasi}[3]{%
+\raggedright\large\textbf{#1}\\%
+\small\raggedleft #2\\%
+\normalsize\raggedright #3\\%
+\vspace{2mm}
+}
+
+\renewcommand{\baselinestretch}{0.9}
+\pagestyle{fancy}
+
+\setcounter{page}{153}
+
+\begin{document}
+
+\setlength{\footskip}{-2mm}
+\lhead[]{希哲会について}
+\chead[]{}
+\rhead[]{}
+\lfoot[]{\thepage{}}
+\cfoot[]{}
+\rfoot[\thepage{}]{}
+\thispagestyle{fancy}
+
+\subsection*{希哲会について \small 文：小山詩乃}
+\indent
+希哲会は、大阪大学で活動する哲学研究サークルです。文学部のみならず、基礎工学部、理学部、医学部、経済学部、人間科学部など様々な学部の生徒が所属しています。
+\vspace{-2zw}
+\subsubsection*{主な活動内容}
+\vspace{-1zw}
+○読書会 ：本年度は、半期に哲学的著作を三冊選定し、主に大阪大学総合図書館・グローバルコモンズで読書会を行なっています。
+
+
+○機関紙の発行：年に一回、会員が執筆した論考、エッセイ、短歌等のテキストを収録した機関紙を発行しています。本誌を含め、過去に全三号を発行しました。
+
+
+○哲学カフェ：哲学カフェとは、あるテーマについて語り合う会です。本年度新歓では「『役に立つ』とはどういうことか」、「『悪口をいう』とはどういうことか」というテーマを扱いました。哲学カフェでは、合意や決定を求めずに各々が自分なりに考えることを目標としています。
+
+
+○人物紹介：月に一回、学部生が哲学者の思想をまとめて発表する会を開催しています。五月は荘子、六月はシャンカラ、七月はサルトルについて学びました。
+\vspace{-2zw}
+\subsubsection*{二〇一九年前期の活動}
+\vspace{-1zw}
+前期は以下の著作の読書会を行い、無事全日程を終えました。
+Ｊ．Ｌ．オースティン『言語と行為』
+Ｌ．ウィトゲンシュタイン『青色本』
+Ｃ．Ｓ．パース『連続性の哲学』
+『青色本』の読書会は一回生を中心に行われました。難解なことで知られるウィトゲンシュタインの著作ということもあり、下級生にとっては苦しい営みでもありましたが、その分学びの多い会でした。
+
+○論文輪読会：夏季休暇に会員が関心のあるテーマ(テキスト論、科学、フェミニズム、社会学、倫理学)毎に論文輪読会を行いました。
+
+\vspace{-2zw}
+\subsubsection*{二〇一九年後期の活動予定}
+\vspace{-1zw}
+十月からは、Ｊ．バークリ『人知原理論』
+Ｅ．カント『視霊者の夢』
+Ｍ．フーコー『性の歴史I 知への意志』
+を読みます。
+
+
+後期の活動に関心のある方は、希哲会ホームページの「お問い合わせ・イベント申し込み」か、TwitterアカウントのＤＭでお問い合わせください。
+
+\subsection*{編集後記}
+おかげさまで『希哲』も第三号の発行を迎えることができました。
+実は第一号、第二号では会員が何の取り決めもなく好き勝手に書いておりました（気づいていましたか？）。この統一性のなさも当誌の一つの魅力(？)だったわけですが、今回は会誌を一冊の本として読んでもらいたいと思い、事前に「箱」というテーマを設定してみました。
+
+
+~~曲がりなりにも統一性が保たれたことで、それぞれの作品の共通点や相違点を探してみるという楽しみ方もできるようになったと思います。もちろん読者の皆さんに『希哲』第三号を多様な仕方で楽しんでいただければ幸いです。 
+
+
+~~編集長が基礎工学部生に代わったため、より専門的（要出典）な編集ソフトが導入されましたが、大変さは相変わらずで、この編集後記を書いている今も入稿の期日まで時間がないという状況です。いつまで経っても慣れませんね。 
+本号が、哲学の楽しさを詰め込んだ素敵な「箱」になっていることを願いつつ、そして第四号が発行されることを願いながら、筆を置きたいと思います。
+
+
+
+\end{document}
+\section*{執筆者紹介}
+\shokai{五十里翔吾}{基礎工学部システム科学科\rensuji{B4}}{anchor200km@gmail.com}{今号からは会長を引き継いで編集を担当しました。立体ミネルヴァくんもぜひ組み立ててみてください。}
+\shokai{野上貴裕}{文学部哲学・思想文化学専修\rensuji{B4}}{takahiro.nogami729@gmail.com}{なんとかかんとか出した希哲の１号、２号でしたが、編集を下の世代に託したこの３号以降もプラットフォームとして続いていってくれれば幸せですね。}
+\shokai{澤井優花}{文学部哲学・思想文化学専修\rensuji{B2}}{Y00viola@gmail.com}{私自身、しんのすけとよく似ていると思います。}
+\shokai{森川勇大}{大学院人間科学研究科\rensuji{M1}}{marumo3da@gmail.com}{さいきん果物にハマっています。}
+\shokaimnasi{黒臺瞭太}{阪大文学部\rensuji{OB}}{また呼んでいただいてありがたい限りです。最近アイデアが湧いてまた小説が書きたくなってきました。「希哲」の創刊号で書いて大爆死した(主観)くせに懲りないもんです}
+\shokai{武澤里映}{文学部美学専修\rensuji{B3}}{tkzw0930@gmail.com}{生みの苦しみを味わいましたが、確かにクセになりますね。}
+\shokaimnasi{新井悠介}{経済学部\rensuji{B4}}{二度目まして、はじめてにもまして大変なことにね。}
+\shokai{佐原キオ}{a}{a}{a}
+\shokai{中野由梨花}{法学部法学科\rensuji{B4}}{1996lilyflower@gmail.com}{多分、白くて丸いものが好きです。特に楕円形。}
+\shokai{金重}{a}{a}{a}
+\shokai{岩本智孝}{大学院文学研究科\rensuji{M1}}{ponrock288okj75@gmail.com}{「大阪梅田」も「京都河原町」もなんだかんだ慣れていくでしょう。ただし「石橋阪大前」、テメーはダメだ。}
+\shokai{中谷拓也}{文学部\rensuji{B1}}{tooker1130@gmail.com}{ぼくの座右の銘(勝手に改変済)を聞いてください！「明日にりんごの樹を植える」}
+\shokaimnasi{田所穐來}{\rensuji{JK}アルバイター}{エモーショナルハードコア}
+\shokaimnasi{小山詩乃}{人間科学部\rensuji{B1}}{精進したいです。}

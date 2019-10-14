@@ -1,0 +1,173 @@
+%\documentclass[10pt,a4j]{utjarticle}
+\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside]{utarticle}
+%\documentclass[b5j,twoside,twocolumn]{utbook}
+\setlength{\columnsep}{2zw}
+\usepackage{bxpapersize}
+\usepackage{pxrubrica}
+\rubysetup{<hj>}
+\usepackage{endnotes}
+\usepackage{multicol}
+\usepackage{plext}
+\renewcommand{\theendnote}{[後注\arabic{endnote}]}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\usepackage{pxftnright}
+\usepackage{fancyhdr}
+\setlength{\topmargin}{5mm} % ページ上部余白の設定（182mm x 257mmから計算）。
+\addtolength{\topmargin}{-1in} % 初期設定の1インチ分を引いておく。
+\setlength{\oddsidemargin}{21mm} % 同、奇数ページ左。
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{17mm} % 同、偶数ページ左。
+\addtolength{\evensidemargin}{-1in}
+\setlength{\footskip}{-5mm}
+%\setlength{\marginparwidth}{23mm}
+%\setlength{\marginparsep}{5mm}
+\setlength{\textwidth}{225mm} % 文書領域の幅（上下）。縦書と横書でパラメータ（width / height）の向きが変わる。
+%\setlength{\textheight}{150mm} % 文書領域の幅（左右）
+\makeatletter
+\def\@cite#1#2{\rensuji{[{#1\if@tempswa , #2\fi}]}}%%
+\def\@biblabel#1{\rensuji{[#1]}}%%%
+\makeatother
+\usepackage{enumerate}
+\usepackage{braket}
+\usepackage{kyakuchu}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\newcommand{\relmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+\usepackage{ascmac}
+\usepackage{okumacro}
+\usepackage{marginnote}
+%\usepackage[top=15truemm,bottom=15truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{cleveref}
+\usepackage{plext}
+\usepackage{pxrubrica}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{cancel}
+\setcounter{tocdepth}{3}
+
+%\renewcommand{\labelenumi}{(\Alph{enumi})}
+\usepackage {scalefnt}
+\makeatletter
+\@definecounter{yakuchu}
+\@addtoreset{yakuchu}{document}% <--- depende on class file
+\def\yakuchu{%
+\@ifnextchar[\@xfootnote %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark\@footnotetext}}
+\def\yakuchutext{%
+\@ifnextchar [\@xfootnotenext %]
+{\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotetext}}
+\def\yakuchumark{%
+\@ifnextchar[\@xfootnotemark %]
+{\stepcounter{yakuchu}%
+\protected@xdef\@thefnmark{\theyakuchu}%
+\@footnotemark}}
+\makeatother
+
+\usepackage{atbegshi,etoolbox}
+
+\newcounter{newfoot}
+\patchcmd{\footnotetext}{\thempfn}{\thenewfoot}{}{}
+
+\newcommand{\evenfootnote}[1]{%
+  \ifodd\value{page}%
+    \footnotemark%
+    \AtBeginShipoutNext{%
+      \stepcounter{newfoot}\footnotetext{#1}%
+    }%
+  \else%
+    \stepcounter{newfoot}\footnote{#1}%
+  \fi%
+}
+
+\renewcommand{\baselinestretch}{2.7}
+\pagestyle{fancy}
+
+\title{\huge 連作「炎を負う」}
+\author{\hspace{30mm} \Large  佐原キオ}
+\date{\vspace{-5mm}}
+\setcounter{page}{98}
+
+\begin{document}
+\fontsize{17pt}{17pt}\selectfont
+\maketitle
+
+\setlength{\footskip}{-2mm}
+\lhead[]{【短歌】}
+\chead[]{}
+\rhead[連作「炎を負う」]{}
+\lfoot[]{\thepage{}}
+\cfoot[]{}
+\rfoot[\thepage{}]{}
+
+\let\yakuchu=\endnote
+\renewcommand{\footnoterule}{\noindent\rule{100mm}{0.3mm}\vskip2mm}
+%\tableofcontents
+\thispagestyle{fancy}
+白南風がすべてを奪い去るように翡翠が夜かがやくように
+
+天体に生かされながら廃駅で夏蜜柑剥く歯がゆさもある
+
+噴水の止まる一瞬、炎天と呼ばれるすべての光の急所
+
+いつまでも燕になれずライダースジャケット掴む妹とわれ
+
+この道は夏までつづく　防波堤に立ついもうとは海の眼をもつ
+
+入れない海を見すえて十代の深い群青色のくやしさ
+
+海のきみをこの世に繋ぎとめるため錨の形をした首飾り
+
+〈月面〉と呼ばれる広野　一頭の銀の子鹿とそこではぐれる
+
+鹿の子のふるえる舌よ粟立ったたましいは孤樹の根にしまわれて
+
+炎昼の給油口から立ちのぼるまぼろしの早瀬を堰きとめる
+
+電波塔に旅鳥つどいこの国の泉の場所を教わるという
+
+幌付きのトラック闇を運びさるわれ知らず咲きほころぶダリア
+
+いっときの驟雨がきみを連れ去ってきみを思うとききみの目を思う
+
+くるしみを羽織って鹿のはらわたのような枯れ紫陽花を見ている
+
+汽水湖にかつて命をふきこんだビオラをきみは大きく抱いて
+
+切り口に闇しみゆける桃ひとつ音の鳴らない楽章すすむ
+
+靄という水蜜桃の一滴をきみが飲もうとする銀世界
+
+ハーモニカ吹くいもうとの夏雲をつかむにはまだ小さすぎる手
+
+にびいろの電球しずか蛍よりひかりをうまく操れるのに
+
+薔薇色をきざす少女の背中には天使より無敵の翼あれ
+
+月光は静かな屋根にふりつもる　なぜ人は生きつづけねばならぬか
+
+いもうとへ月の光はしなだれて浴槽にほころぶ柘榴の実
+
+いもうとの髪やわらかく梳いてその耳の熱りをむすぶ炎は
+
+銅板を拭う布巾をたたみつつ銅版画の少女の熱い息
+
+火と炎の違いはいのちを焼くものか　ずっと消えない炎をかつぐ
+
+清らかに燃えるかぎりは触れられぬ少女は発条仕掛けのからだもつ
+
+死が近い恒星たちを背にうずめ痛みとは死を知る星のよう
+
+泣くときはひたむきに泣け海鳴りがまっすぐ時化をよびこむように
+
+松明を持ち月ごとに訪れる火夫の丸顔の無表情
+
+神学の訳書に深くはさまれて夜明けをのぞむわれらの北斗
+
+\end{document}
